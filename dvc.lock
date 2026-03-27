@@ -38,3 +38,26 @@ stages:
       md5: 66f8e1a35cc79e731863e6e73fe88df0.dir
       size: 10865076264
       nfiles: 61320
+  train:
+    cmd: python3 -m bg_remover.scripts.train
+    deps:
+    - path: bg_remover/data/processed/test
+      hash: md5
+      md5: 17ed69f6f1818764acef2bbd8690605f.dir
+      size: 231538628
+      nfiles: 1136
+    - path: bg_remover/data/processed/train
+      hash: md5
+      md5: 66f8e1a35cc79e731863e6e73fe88df0.dir
+      size: 10865076264
+      nfiles: 61320
+    - path: bg_remover/scripts/train.py
+      hash: md5
+      md5: 213603e40f8066d99df4b1d94e40a4aa
+      size: 4737
+      isexec: true
+    outs:
+    - path: bg_remover/artifacts/model/my_model.pth
+      hash: md5
+      md5: 9ecaba2a122cd192826c644e53e48372
+      size: 69067279

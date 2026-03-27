@@ -20,7 +20,7 @@ stages:
       - bg_remover/data/processed/train
       - bg_remover/data/processed/test
     outs:
-      -  /teamspace/studios/this_studio/bg_remover/artifacts/model/my_model
+      -  /teamspace/studios/this_studio/bg_remover/artifacts/model/my_model.pth
 
 
 
